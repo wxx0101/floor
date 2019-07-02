@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/show/show",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#00a8f3",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7fa",
+    "position":"top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新建投票"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "投票广场"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的投票"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+/* pages/show/show.wxss */
+page,.box,.showbox,scroll-view{
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
+scroll-view {
+  height: 100%;
+}
+.nav{
+  position: fixed;
+  width: 30rpx;
+  font-size: 0;
+  top: 60rpx;
+  right: 10rpx;
+}
+.title{
+  height: 80rpx;
+  background: #cccc;
+  line-height: 80rpx;
+  padding-left: 40rpx;
+}
+.nav>view{
+  font-size: 24rpx;
+  text-align: center;
+  width: 30rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.nav>.check{
+  background: #333;
+  color: pink;
+}
+.showtext{
+  box-sizing: border-box;
+  height: 120rpx;
+  padding: 0 80rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.showtext>image{
+  height: 100%;
+  width: 120rpx;
+}
+#Z{
+  padding-bottom: 75rpx;
+}

@@ -1,0 +1,18 @@
+<view class='box'>
+  <view class='showbox'>
+    <scroll-view scroll-y scroll-into-view="{{ele}}" bindscroll="scrollFn" >
+      <view class='content' wx:for="{{dataList}}" wx:key="index" id="{{item.key}}">
+        <view class='title'>{{item.key}}</view>
+        <view class='showtext' wx:for="{{item.row}}" wx:for-item="val" wx:key="index">
+          <image src='{{val.img}}' mode='aspectFit'></image>
+          <view>{{val.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='nav'>
+    <view wx:for="{{dataList}}" wx:key="index" data-index='{{index}}' data-ind='{{item.key}}' bindtap="clickFn" class='{{index === currentInd ? "check" : ""}}'>
+      {{item.key}}
+    </view>
+  </view>
+</view>
